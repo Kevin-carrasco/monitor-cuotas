@@ -139,11 +139,8 @@ server <- function(input, output, session) {
   output$g_educ_nq <- grafico(function() g_cuotas(cuotas(completas(), "educ_netquest", marco = "educ_cuota")))
 
   output$nota_nq <- renderUI({
-    sin <- sum(is.na(completas()$educ_netquest))
     paste0("Perfil del panel Netquest. Técnica completa y universitaria incompleta vienen juntas y se ",
-           "cuentan como técnica superior. ",
-           if (sin > 0) sprintf("%s completas aún sin información de Netquest. ", num_es(sin)),
-           NOTA_CUOTA)
+           "cuentan como técnica superior. ", NOTA_CUOTA)
   })
 }
 
