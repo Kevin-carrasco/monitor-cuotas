@@ -1,0 +1,21 @@
+# Credenciales: nunca subir
+.env
+.Renviron
+
+# Bases con datos de participantes (tickets, id_user): nunca subir
+config/educacion_netquest.csv
+output/
+*.xlsx
+*.xls
+*.csv
+*.rds
+*.RData
+
+# R / RStudio
+.Rproj.user/
+.Rhistory
+.Ruserdata
+rsconnect/
+
+# Sistema
+.DS_Store
